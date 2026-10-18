@@ -1,5 +1,5 @@
 # Sentinel Stack
 
-Public static preview of the Sentinel Stack security operations console.
+[Open the live security operations dashboard](https://ayushkjha.github.io/sentinel-stack/)
 
-This preview uses a public-only repository snapshot. It does not connect to provider APIs or monitor production services. Private repository inventory, credentials, local logs, and scanner data are not included.
+Public static preview of the Sentinel Stack security operations console. It shows a dated public repository snapshot and verification gaps; it does not connect to provider APIs or monitor production services. Private repository inventory, credentials, local logs, and scanner data are not included.
