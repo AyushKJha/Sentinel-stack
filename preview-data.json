@@ -1,0 +1,233 @@
+{
+  "repos": [
+    {
+      "name": "Daily_Routine_Tracker",
+      "visibility": "public",
+      "kind": "web + Android",
+      "url": "https://github.com/AyushKJha/Daily_Routine_Tracker",
+      "live": "https://daily-routine-journal.onrender.com",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "fuel-app",
+      "visibility": "public",
+      "kind": "web + Android",
+      "url": "https://github.com/AyushKJha/fuel-app",
+      "live": "https://fuel-journal.vercel.app",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "ForgeRadar",
+      "visibility": "public",
+      "kind": "local AI + web",
+      "url": "https://github.com/AyushKJha/ForgeRadar",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "orbit-job-agent",
+      "visibility": "public",
+      "kind": "web + agent",
+      "url": "https://github.com/AyushKJha/orbit-job-agent",
+      "live": "https://orbit-job-agent.onrender.com",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "ESP32_Microcontroller_Car",
+      "visibility": "public",
+      "kind": "embedded",
+      "url": "https://github.com/AyushKJha/ESP32_Microcontroller_Car",
+      "live": null,
+      "tier": "archive",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "Cybersecurity_Battlefield-",
+      "visibility": "public",
+      "kind": "security studies",
+      "url": "https://github.com/AyushKJha/Cybersecurity_Battlefield-",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "PCO_work",
+      "visibility": "public",
+      "kind": "AgentPGO backend",
+      "url": "https://github.com/AyushKJha/PCO_work",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "chatt-mahaparv",
+      "visibility": "public",
+      "kind": "web experience",
+      "url": "https://github.com/AyushKJha/chatt-mahaparv",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "Certificates",
+      "visibility": "public",
+      "kind": "documents",
+      "url": "https://github.com/AyushKJha/Certificates",
+      "live": null,
+      "tier": "archive",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "Real-Time-Hand-Gesture-Recognition-System",
+      "visibility": "public",
+      "kind": "Python experiment",
+      "url": "https://github.com/AyushKJha/Real-Time-Hand-Gesture-Recognition-System",
+      "live": null,
+      "tier": "archive",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "ayush-portfolio",
+      "visibility": "public",
+      "kind": "portfolio",
+      "url": "https://github.com/AyushKJha/ayush-portfolio",
+      "live": "https://ayush-kumar-jha.onrender.com",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "profile-2.0",
+      "visibility": "public",
+      "kind": "portfolio",
+      "url": "https://github.com/AyushKJha/profile-2.0",
+      "live": "https://ayush-kumar-jha-v2.onrender.com/",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "AyushKJha",
+      "visibility": "public",
+      "kind": "profile",
+      "url": "https://github.com/AyushKJha",
+      "live": "https://ayush-kumar-jha-v2.onrender.com/",
+      "tier": "active",
+      "source": "GitHub inventory snapshot · 2026-10-17"
+    },
+    {
+      "name": "Data-Pipeline-Health-Monitor",
+      "visibility": "public",
+      "kind": "local application",
+      "url": "https://github.com/AyushKJha/Data-Pipeline-Health-Monitor",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub repository inventory · 2026-10-17"
+    },
+    {
+      "name": "Amazon-Wishlist-filter",
+      "visibility": "public",
+      "kind": "local application",
+      "url": "https://github.com/AyushKJha/Amazon-Wishlist-filter",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub repository inventory · 2026-10-17"
+    },
+    {
+      "name": "Local-AI-Evaluation-Workbench",
+      "visibility": "public",
+      "kind": "local AI",
+      "url": "https://github.com/AyushKJha/Local-AI-Evaluation-Workbench",
+      "live": null,
+      "tier": "active",
+      "source": "GitHub repository inventory · 2026-10-17"
+    },
+    {
+      "name": "agent-PGO",
+      "visibility": "external collaboration",
+      "kind": "AgentPGO collaboration",
+      "url": "https://github.com/Auro-rium/agent-PGO",
+      "live": null,
+      "tier": "external",
+      "source": "Explicitly tracked collaboration"
+    }
+  ],
+  "providers": {
+    "github": {
+      "status": "snapshot",
+      "detail": "18 owned repositories counted from the 2026-10-17 account audit; 1 collaboration tracked separately. Read-only GitHub App connection not configured."
+    },
+    "hosting": {
+      "status": "partial",
+      "detail": "Public HTTP checks can verify reachability and TLS. CPU, memory, request volume, firewall/WAF and runtime logs require each hosting provider's read-only API or an in-app telemetry agent."
+    },
+    "usage": {
+      "status": "unconnected",
+      "detail": "GitHub traffic provides aggregate views/clones for the last 14 days where enabled; it does not identify people. Website usage analytics are not connected."
+    },
+    "firewall": {
+      "status": "unconnected",
+      "detail": "A workstation firewall covers this workstation only. Public apps need provider-side WAF/firewall posture or application controls."
+    },
+    "localAI": {
+      "status": "optional",
+      "detail": "Ollama can run locally. AI receives sanitized findings only and can recommend changes; it cannot execute commands, change settings, or deploy."
+    },
+    "scanners": {
+      "status": "not-provisioned",
+      "detail": "Integrations are designed for local Gitleaks, Trivy, Semgrep and MobSF. No tools have been installed or run by this prototype."
+    }
+  },
+  "snapshot": {
+    "capturedAt": "2026-10-17T00:00:00.000Z",
+    "scope": "Public-only static preview. This page contains no private repository inventory and does not connect to providers or monitor production services.",
+    "publicRepositories": 16,
+    "trackedPublicCollaboration": 1,
+    "readmeRelativeLinks": {
+      "checked": 176,
+      "broken": 0
+    },
+    "externalUrls": {
+      "checked": 33,
+      "responded": 33
+    },
+    "tested": [
+      "Data-Pipeline-Health-Monitor (1/1)",
+      "Local-AI-Evaluation-Workbench (1/1)",
+      "Amazon-Wishlist-filter (1/1)"
+    ],
+    "partialTests": [
+      "ForgeRadar (55/58; 3 localhost sandbox restrictions)",
+      "orbit-job-agent (22/34; missing optional npm dependencies and localhost restrictions)"
+    ],
+    "notRun": [
+      "Daily_Routine_Tracker (fake-indexeddb dependency absent)",
+      "fuel-app (TypeScript dependency absent)",
+      "production load tests",
+      "disaster recovery restore tests"
+    ]
+  },
+  "releases": [
+    {
+      "repo": "Daily_Routine_Tracker",
+      "platform": "Android APK",
+      "version": "1.4.0",
+      "url": "https://github.com/AyushKJha/Daily_Routine_Tracker/releases/download/android-v1.4.0/Daily-1.4.0.apk",
+      "linkChecked": "2026-10-17",
+      "integrity": "not checked",
+      "signing": "not checked"
+    },
+    {
+      "repo": "fuel-app",
+      "platform": "Android APK",
+      "version": "2.0.0",
+      "url": "https://expo.dev/artifacts/eas/JRQigEVtW4Id8WkEQUIvY7BLjk41d5hA_ZrMIkb7iCg.apk",
+      "linkChecked": "2026-10-17",
+      "integrity": "not checked",
+      "signing": "not checked"
+    }
+  ],
+  "siteHealth": null
+}

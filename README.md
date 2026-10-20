@@ -8,8 +8,6 @@
 
 <p align="center">
   <a href="https://ayushkjha.github.io/sentinel-stack/"><strong>OPEN THE LIVE DASHBOARD ↗</strong></a>
-  &nbsp;·&nbsp;
-  <a href="docs/Sentinel-Stack-How-It-Works.pdf"><strong>READ THE IMPLEMENTATION GUIDE (PDF)</strong></a>
 </p>
 
 <p align="center">
@@ -18,7 +16,7 @@
   <img src="https://img.shields.io/badge/security-read--only%20snapshot-bb8cff?style=flat-square" alt="Read only snapshot">
 </p>
 
-> **Scope today:** The live GitHub Pages dashboard is a static, read-only portfolio snapshot. It does not connect to GitHub APIs, scan or probe sites, monitor traffic, apply a firewall/WAF, enforce rate limits, or run AI. The fuller Node.js prototype and its local data are not included in this public preview repository. See the guide for the exact boundary between implemented and planned capabilities.
+> **Scope today:** The live GitHub Pages dashboard is a static, read-only portfolio snapshot. It does not connect to GitHub APIs, scan or probe sites, monitor traffic, apply a firewall/WAF, enforce rate limits, or run AI. The fuller Node.js prototype and its local data are not included in this public preview repository. The sections below describe the exact boundary between implemented and planned capabilities.
 
 ## Contents
 
@@ -57,7 +55,7 @@ flowchart LR
     Public -. no connection .- Local
 ```
 
-The public page loads its portfolio rows directly from its static HTML. The local prototype is a separate application that reads local data and exposes a loopback-only dashboard/API. Its manual HTTPS check runs only when requested; optional GitHub inventory sync requires a read-only token. No data path currently connects these two builds.
+The public page loads its curated portfolio rows from the static `preview-data.json` snapshot and its presentation from the bundled CSS and JavaScript files. The local prototype is a separate application that reads local data and exposes a loopback-only dashboard/API. Its manual HTTPS check runs only when requested; optional GitHub inventory sync requires a read-only token. No data path currently connects these two builds.
 
 ## What is included
 
@@ -97,7 +95,7 @@ The page requires no account, token, install, or browser permission. Its status 
 
 ## Implementation guide
 
-The [Sentinel Stack implementation guide (PDF)](docs/Sentinel-Stack-How-It-Works.pdf) explains the architecture, data flows, implemented features, run and test steps for the local prototype, security boundaries, and the next development stages. It distinguishes the public static page from the separate local prototype so the current capabilities are clear.
+The public GitHub Pages build contains only the static dashboard, its curated public portfolio snapshot, and the assets required to render it. The separate local Node.js prototype, local inventory, credentials and logs are not published here.
 
 ---
 
