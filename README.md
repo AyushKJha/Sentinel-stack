@@ -7,7 +7,7 @@
 <p align="center"><strong>A local-first security operations console for understanding the health and exposure of your project portfolio.</strong></p>
 
 <p align="center">
-  <a href="https://ayushkjha.github.io/sentinel-stack/"><strong>OPEN THE LIVE DASHBOARD ↗</strong></a>
+  <a href="https://ayushkjha.github.io/Sentinel-stack/"><strong>OPEN THE LIVE DASHBOARD ↗</strong></a>
 </p>
 
 <p align="center">
@@ -71,7 +71,7 @@ The public page loads its curated portfolio rows from the static `preview-data.j
 
 ## Using the public dashboard
 
-1. Open the [live Sentinel Stack dashboard](https://ayushkjha.github.io/sentinel-stack/).
+1. Open the [live Sentinel Stack dashboard](https://ayushkjha.github.io/Sentinel-stack/).
 2. Review the project list and its visible status indicators as a curated snapshot.
 3. Follow a project link to inspect that project's own repository or deployment.
 
