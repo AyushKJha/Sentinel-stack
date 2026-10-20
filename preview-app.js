@@ -58,14 +58,15 @@ async function boot(){
     const owned=repos.filter(x=>x.visibility==='public'||x.visibility==='private');
     $('#owned-count').textContent=String(owned.length).padStart(2,'0');
     const privateCount=$('#private-count');if(privateCount)privateCount.textContent='—';
-    $('#project-count').textContent=String(owned.length).padStart(2,'0');
+
     $('#endpoint-count').innerHTML=`${new Set(repos.filter(x=>x.live).map(x=>x.live)).size}<span class="metric-unit"> configured</span>`;
-    $('#audit-date').textContent=new Date(snapshot.capturedAt).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}).toUpperCase();
+
     $('#snapshot-date').textContent=new Date(snapshot.capturedAt).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase();
-    $('#posture-date').textContent=`${new Date(snapshot.capturedAt).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase()} · LOCAL AUDIT`;
+
+    $('#data-state').textContent='SNAPSHOT / '+new Date(snapshot.capturedAt).toLocaleDateString('en-GB');
     renderExposure(repos);
     renderRepos(repos,siteHealth);renderProviders(providers,releases);
     $('#search').addEventListener('input',()=>renderRepos(repos,siteHealth));$('#filter').addEventListener('change',()=>renderRepos(repos,siteHealth));
-  }catch(error){$('#repo-rows').innerHTML=`<tr><td class="empty" colspan="6">${esc(error.message)}</td></tr>`;}
+  }catch(error){$('#data-state').textContent='INVENTORY UNAVAILABLE';$('#repo-rows').innerHTML=`<tr><td class="empty" colspan="6">${esc(error.message)}</td></tr>`;}
 }
 boot();
