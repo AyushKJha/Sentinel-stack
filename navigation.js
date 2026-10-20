@@ -34,19 +34,19 @@
       next.style.zIndex = '2';
       animations.push(previous.animate([
         { transform: 'scale(1)', opacity: 1, filter: 'blur(0px)' },
-        { transform: 'scale(.96)', opacity: 0, filter: 'blur(5px)' }
+        { transform: 'scale(.995)', opacity: 0, filter: 'blur(0px)' }
       ], { duration: 260, easing: 'ease-out', fill: 'both' }));
       const incoming = next.animate([
-        { opacity: 0, clipPath: 'inset(0 0 100% 0)' },
-        { opacity: 1, clipPath: 'inset(0 0 0% 0)' }
-      ], { duration: 580, easing: 'cubic-bezier(.16,1,.3,1)' });
+        { opacity: 0, transform: 'translateY(12px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 420, easing: 'cubic-bezier(.16,1,.3,1)' });
       animations.push(incoming);
       const elements = [...next.children];
       elements.forEach((element, index) => {
         animations.push(element.animate([
-          { opacity: 0, transform: 'translateY(24px) scale(.985)', filter: 'blur(4px)' },
+          { opacity: 0, transform: 'translateY(10px) scale(1)', filter: 'blur(0px)' },
           { opacity: 1, transform: 'translateY(0) scale(1)', filter: 'blur(0px)' }
-        ], { duration: 650, delay: 80 + index * 65, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' }));
+        ], { duration: 460, delay: 30 + index * 35, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' }));
       });
       incoming.finished.then(() => {
         if (version === generation) previous.hidden = true;
