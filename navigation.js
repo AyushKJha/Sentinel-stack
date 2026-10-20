@@ -15,7 +15,6 @@
     animations = [];
     const previous = current && document.getElementById(`view-${current}`);
     const next = document.getElementById(`view-${name}`);
-    const direction = names.indexOf(name) >= names.indexOf(current) ? 1 : -1;
     views.forEach(view => {
       view.hidden = view !== next;
       view.inert = view !== next;
@@ -31,15 +30,24 @@
     next.scrollTop = 0;
     if (previous && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
       previous.hidden = false;
+      previous.style.zIndex = '1';
+      next.style.zIndex = '2';
       animations.push(previous.animate([
-        { transform: 'translateX(0)', opacity: 1 },
-        { transform: `translateX(${-direction * 70}px)`, opacity: 0 }
-      ], { duration: 280, easing: 'ease-in', fill: 'both' }));
+        { transform: 'scale(1)', opacity: 1, filter: 'blur(0px)' },
+        { transform: 'scale(.96)', opacity: 0, filter: 'blur(5px)' }
+      ], { duration: 260, easing: 'ease-out', fill: 'both' }));
       const incoming = next.animate([
-        { transform: `translateX(${direction * 100}px)`, opacity: 0 },
-        { transform: 'translateX(0)', opacity: 1 }
-      ], { duration: 460, easing: 'cubic-bezier(.2,.8,.2,1)' });
+        { opacity: 0, clipPath: 'inset(0 0 100% 0)' },
+        { opacity: 1, clipPath: 'inset(0 0 0% 0)' }
+      ], { duration: 580, easing: 'cubic-bezier(.16,1,.3,1)' });
       animations.push(incoming);
+      const elements = [...next.children];
+      elements.forEach((element, index) => {
+        animations.push(element.animate([
+          { opacity: 0, transform: 'translateY(24px) scale(.985)', filter: 'blur(4px)' },
+          { opacity: 1, transform: 'translateY(0) scale(1)', filter: 'blur(0px)' }
+        ], { duration: 650, delay: 80 + index * 65, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' }));
+      });
       incoming.finished.then(() => {
         if (version === generation) previous.hidden = true;
       }).catch(() => {});
