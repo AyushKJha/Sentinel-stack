@@ -1,0 +1,7 @@
+# Local editor and assistant tooling
+.claude/
+.codex/
+.cursor/
+.aider*
+CLAUDE.md
+AGENTS.md
